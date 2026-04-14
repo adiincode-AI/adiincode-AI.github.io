@@ -112,7 +112,7 @@ body {
   height: 300px;
   border-radius: 50%;
   background: linear-gradient(45deg, #22D3EE, #8B5CF6);
-  padding: 5px;
+  padding: 0px;
   animation: float 5s ease-in-out infinite;
 }
 
