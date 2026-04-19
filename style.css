@@ -163,7 +163,7 @@ h3 {
   height: 260px;
   border-radius: 50%;
   background: linear-gradient(45deg, #22D3EE, #8B5CF6);
-  padding: 4px;
+  padding: 0px;
 }
 
 .image-card img {
