@@ -6,8 +6,14 @@
   <title>Adi | Portfolio</title>
 
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,78 +33,129 @@
   <section class="hero">
 
     <div class="hero-text">
-      <h1>Hi, I'm <span class="gradient-text">Aditya</span></h1>
+      <h1>Hi, I'm <span class="hero-name">Aditya</span></h1>
 
       <p class="subtitle">
-        Data Analyst | Python (Pandas, NumPy) | SQL | Building Data-Driven Solutions
+        Python Developer | Backend Development | Automation & Data Handling | SQL
       </p>
 
       <div class="cta-group">
-        <a href="#projects" class="btn primary">🚀 View Projects</a>
-        <a href="assets/resume.pdf" target="_blank" class="btn secondary">📄 View Resume</a>
+        <a href="#projects" class="btn primary">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+
+      <a href="assets/resume.pdf" target="_blank" class="btn secondary">
+        <i class="fa-solid fa-file-lines"></i> View Resume
+      </a>
       </div>
     </div>
 
     <div class="hero-image">
       <div class="image-card">
-        <img src="assets/myphoto.png" alt="Adi Profile Photo">
+        <img src="assets/myphoto.png" alt="Profile Photo">
       </div>
     </div>
 
   </section>
 
+
   <!-- ABOUT -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <div class="about-grid">
-      <div class="about-card">💻 Python Development</div>
-      <div class="about-card">🤖 AI/ML Projects</div>
-      <div class="about-card">🌐 Full-Stack Learning</div>
-    </div>
+    <p class="about-text">
+      I am a Python developer focused on backend development, automation, and data handling. 
+      I build applications that process data, automate workflows, and solve real-world problems 
+      using Python and SQL.
+
+      Currently developing projects to strengthen my backend skills and create scalable, 
+      practical solutions.
+    </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card">Python</div>
-      <div class="card">AI/ML</div>
-      <div class="card">JavaScript</div>
-      <div class="card">SQL</div>
-      <div class="card">Web Dev</div>
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <i class="devicon-python-plain colored"></i>
+      <p>Python</p>
     </div>
-  </section>
+
+    <div class="card">
+      <i class="devicon-mysql-plain colored"></i>
+      <p>SQL</p>
+    </div>
+
+    <div class="card">
+      <i class="devicon-bash-plain"></i>
+      <p>Automation</p>
+    </div>
+
+    <div class="card">
+      <i class="devicon-fastapi-plain colored"></i>
+      <p>REST APIs</p>
+    </div>
+
+  </div>
+</section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <h2>Projects</h2>
 
     <div class="project">
-      <h3>🍽️ Food Ordering Website</h3>
-      <p>Responsive web app with UI-focused experience and ordering flow.</p>
-    </div>
+  <h3>Expense Tracker (Python + SQLite)</h3>
+  <p>
+    Developed a backend-driven expense tracking application to store, manage, 
+    and analyze daily expenses. Implemented SQLite database integration and 
+    automated data handling for efficient tracking and reporting.
+  </p>
 
-  </section>
+  <a href="https://github.com/adiincode-AI/aureus-expense-tracker" target="_blank" class="project-link">
+    <i class="fa-brands fa-github"></i> View on GitHub
+  </a>
+<a href="https://aureus-finance.streamlit.app/" target="_blank" class="project-link">
+  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+</a>
+</div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Phone: 7205506633</p>
-    <p>Email: arout2922@gmail.com</p>
-  </section>
+
+<div class="project">
+  <h3>Food Delivery Website (Academic Project)</h3>
+  <p>
+    Developed a full-stack food delivery web application using HTML, CSS, JavaScript, Bootstrap, and SQL with authentication and admin functionalities. Implemented user login and signup system, along with an admin panel for managing food items and orders. Enabled cart management and order placement with data stored and tracked in a structured SQL database for efficient order processing and management.
+  </p>
+
+  <a href="https://github.com/adiincode-AI/food-delivery" target="_blank" class="project-link">
+    <i class="fa-brands fa-github"></i> View on GitHub
+  </a>
+</div>
+
+
+<section class="social-center">
+
+  <a href="https://github.com/adiincode-AI" target="_blank" class="social-btn">
+    <i class="fa-brands fa-github"></i>
+    GitHub
+  </a>
+
+  <a href="https://www.linkedin.com/in/aditya-r-a7629a244/" target="_blank" class="social-btn">
+    <i class="fa-brands fa-linkedin"></i>
+    LinkedIn
+  </a>
+
+  <a href="mailto:arout2922@gmail.com" class="social-btn">
+    <i class="fa-solid fa-envelope"></i>
+    Email
+  </a>
+
+</section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-content">
-      <p>© 2026 Aditya Rout — Built with precision ⚡</p>
-
-      <div class="socials">
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/aditya-r-a7629a244" target="_blank">LinkedIn</a>
-        <a href="https://x.com/AdityaR94159507" target="_blank">Twitter</a>
-        <a href="mailto:arout2922@gmail.com">Email</a>
-      </div>
-    </div>
+    <p>© 2026 Aditya Rout — Built with precision ⚡</p>
   </footer>
 
 </body>
