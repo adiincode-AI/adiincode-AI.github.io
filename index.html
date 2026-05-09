@@ -32,6 +32,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#api-demo">Live API Playground</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -110,78 +111,69 @@
       </div>
     </section>
 <div class="divider-line"></div>
+<section id="projects" class="section">
+  <h2>Projects</h2>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Retrievy(Lost Found Application)</h3>
-        <p>
-         Built Retrievy, a full-stack lost and found web application to report, track, and manage lost and found items efficiently. Developed a FastAPI backend with a structured SQLite database to store and manage item records including description, location, and contact details. Built a responsive React frontend for users to submit and browse reports, and implemented a matching system to connect related entries and improve item recovery.
-        </p>
+  <div class="projects-grid">
 
-        <a
-          href="https://github.com/adiincode-AI/RetrievyAI"
-          target="_blank"
-          class="project-link"
-        >
-          <i class="fa-brands fa-github"></i> View on GitHub
-        </a>
-         <a
-          href="https://aureus-finance.streamlit.app/"
-          target="_blank"
-          class="project-link"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-        </a>
-      </div>
-      </div>
-      <div class="project">
-        <h3>Expense Tracker (Python + SQLite)</h3>
-        <p>
-          Developed a backend-driven expense tracking application to record,
-          manage, and analyze daily expenses. Implemented SQLite database
-          integration to store and retrieve financial data efficiently. Built
-          automated data handling workflows to ensure accurate tracking and
-          streamlined expense reporting.
-        </p>
+    <div class="project featured">
+      <span class="tag">Featured</span>
 
-        <a
-          href="https://github.com/adiincode-AI/aureus-expense-tracker"
-          target="_blank"
-          class="project-link"
-        >
-          <i class="fa-brands fa-github"></i> View on GitHub
-        </a>
-        <a
-          href="https://aureus-finance.streamlit.app/"
-          target="_blank"
-          class="project-link"
-        >
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-        </a>
-      </div>
+      <h3>Retrievy (Lost Found Application)</h3>
 
-      <div class="project">
-        <h3>Food Delivery Website (Academic Project)</h3>
-        <p>
-          Developed a full-stack food delivery web application using HTML, CSS,
-          JavaScript, Bootstrap, and SQL with authentication and admin
-          functionalities. Implemented secure user login and signup systems
-          along with an admin panel to manage food items and orders. Built cart
-          management and order placement features with data stored in a
-          structured SQL database for efficient processing and tracking of user
-          orders.
-        </p>
+      <p>
+        Built Retrievy, a full-stack lost and found web application to report, track, and manage lost and found items efficiently. Developed a FastAPI backend with a structured SQLite database to store and manage item records including description, location, and contact details. Built a responsive React frontend for users to submit and browse reports, and implemented a matching system to connect related entries and improve item recovery.
+      </p>
 
-        <a
-          href="https://github.com/adiincode-AI/food-delivery"
-          target="_blank"
-          class="project-link"
-        >
-          <i class="fa-brands fa-github"></i> View on GitHub
-        </a>
-      </div>
-    </section>
+      <a href="https://github.com/adiincode-AI/RetrievyAI" target="_blank" class="project-link">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Expense Tracker (Python + SQLite)</h3>
+      <p>
+        Developed a backend-driven expense tracking application to record, manage, and analyze daily expenses using SQLite database integration.
+      </p>
+
+      <a href="https://github.com/adiincode-AI/aureus-expense-tracker" target="_blank" class="project-link">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Food Delivery Website</h3>
+      <p>
+        Full-stack food delivery system built using HTML, CSS, JavaScript, Bootstrap, and SQL with authentication and admin features.
+      </p>
+
+      <a href="https://github.com/adiincode-AI/food-delivery" target="_blank" class="project-link">
+        <i class="fa-brands fa-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="api-demo" class="section">
+  <h2>Live API Playground</h2>
+
+  <div class="weather-card">
+    <h3>Weather Checker</h3>
+
+    <input id="cityInput" type="text" placeholder="Enter city (e.g. Bhubaneswar)" />
+
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="weatherResult"></div>
+  </div>
+</section>
+</section>
+      </a>
+    </div>
+
+  </div>
+</section>
   
 
     <section id="contact" class="social-center">
