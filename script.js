@@ -13,8 +13,8 @@ async function getWeather() {
   try {
 
     const response = await fetch(
-      `https://weather-api-xxxx.onrender.com/weather/${city}`
-    );
+      `https://weather-api-backend-tovo.onrender.com/weather/${city}`
+  );
 
     const data = await response.json();
 
