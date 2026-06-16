@@ -1,30 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adi | Portfolio</title>
+    <title>Aditya Rout | Data Analyst Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+    
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -34,176 +23,146 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#api-demo">Live API Playground</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Hi, I'm <span class="hero-name">Aditya</span></h1>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="hero-name">Aditya</span></h1>
+          <h2 class="role-title">Data Analyst</h2>
+          
+          <p class="hero-description">
+            Transforming raw data into actionable business insights. I specialize in data manipulation, exploratory analysis, and building visual narratives to drive data-informed decisions.
+          </p>
 
-        <p class="subtitle">
-          Python Developer | Backend Development | Automation & Data Handling |
-          SQL
-        </p>
+          <div class="cta-group">
+            <a href="#projects" class="btn primary">
+              <i class="fa-solid fa-chart-pie"></i> View Insights
+            </a>
+            <a href="assets/resume.pdf" target="_blank" class="btn secondary">
+              <i class="fa-solid fa-file-pdf"></i> Resume
+            </a>
+          </div>
+        </div>
 
-        <div class="cta-group">
-          <a href="#projects" class="btn primary">
-            <i class="fa-solid fa-rocket"></i> View Projects
+        <div class="hero-image">
+          <div class="image-card">
+            <img src="assets/myphoto.png" alt="Aditya Rout - Profile Photo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section bg-light">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I am a Data Analyst with a strong foundation in Python and SQL, dedicated to uncovering patterns and optimizing processes. My background involves designing structured databases, processing complex datasets, and extracting meaningful metrics. I am passionate about bridging the gap between raw numbers and strategic business solutions.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Technical Toolkit</h2>
+          <div class="grid skills-grid">
+            
+            <div class="card skill-card">
+              <i class="devicon-python-plain colored"></i>
+              <h3>Python</h3>
+              <p>Pandas, NumPy, Matplotlib</p>
+            </div>
+
+            <div class="card skill-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <h3>Databases</h3>
+              <p>SQL, PostgreSQL, Relational Modeling</p>
+            </div>
+
+            <div class="card skill-card">
+              <i class="fa-solid fa-chart-column colored-icon"></i>
+              <h3>Visualization</h3>
+              <p>Power BI, Tableau, Dashboards, Reporting</p>
+            </div>
+
+            <div class="card skill-card">
+              <i class="fa-solid fa-filter colored-icon"></i>
+              <h3>Data Processing</h3>
+              <p>Cleaning, ETL Pipelines, Automation</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section bg-light">
+        <div class="container">
+          <h2 class="section-title">Analytical Projects</h2>
+          <div class="projects-grid grid">
+            
+            <div class="project card">
+              <h3>HR Analytics Project</h3>
+              <p>
+                Leveraged workforce analytics to mitigate attrition. Applied Python for pattern recognition and Tableau for interactive visualization, enabling leadership to make data-driven retention decisions and optimize workforce productivity.
+              </p>
+              <div class="project-actions" style="margin-top: 20px;">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  View Case Study & Dashboards &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="project card">
+              <h3>Food Delivery Data Modeling</h3>
+              <p>
+                Analyzed order processing workflows from a full-stack system. Designed entity-relationship diagrams and optimized database queries, resulting in faster data retrieval.
+              </p>
+              <div class="project-actions" style="margin-top: 20px;">
+                <a href="project1.html" class="btn primary">
+                  View Case Study & Dashboards &rarr;
+                </a>
+              </div>
+            </div>
+
+            <div class="project card">
+              <h3>Retrievy Database Architecture</h3>
+              <p>
+                Structured the backend SQLite database for a lost-and-found application. Implemented a matching logic system to connect related entries based on location and descriptive data.
+              </p>
+              <div class="project-actions" style="margin-top: 20px;">
+                <a href="project1.html" class="btn primary">
+                  View Case Study & Dashboards &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="contact" class="footer-section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="footer-text">Open to opportunities in Data Analytics and Business Intelligence.</p>
+        
+        <div class="social-center">
+          <a href="https://github.com/adiincode-AI" target="_blank" class="social-btn">
+            <i class="fa-brands fa-github"></i> GitHub
           </a>
-
-          <a href="assets/resume.pdf" target="_blank" class="btn secondary">
-            <i class="fa-solid fa-file-lines"></i> View Resume
+          <a href="https://www.linkedin.com/in/aditya-r-a7629a244/" target="_blank" class="social-btn">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:arout2922@gmail.com" class="social-btn">
+            <i class="fa-solid fa-envelope"></i> Email
           </a>
         </div>
+        
+        <div class="divider-line"></div>
+        <p class="copyright">© 2026 Aditya Rout. Designed with data in mind.</p>
       </div>
-
-      <div class="hero-image">
-        <div class="image-card">
-          <img src="assets/myphoto.png" alt="Profile Photo" />
-        </div>
-      </div>
-    </section>
-    <div class="section-divider">
-  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
-    <path
-      fill="#F3F4F6"
-      d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
-    ></path>
-  </svg>
-</div>
-
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p class="about-text">
-        I am a Python developer focused on backend development, automation, and
-        data handling. I build applications that process data, automate
-        workflows, and solve real-world problems using Python and SQL. Currently
-        developing projects to strengthen my backend skills and create scalable,
-        practical solutions.
-      </p>
-    </section>
-
-    <div class="divider-line"></div>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-
-      <div class="grid">
-        <div class="card">
-          <i class="devicon-python-plain colored"></i>
-          <p>Python</p>
-        </div>
-
-        <div class="card">
-          <i class="devicon-mysql-plain colored"></i>
-          <p>SQL</p>
-        </div>
-
-        <div class="card">
-          <i class="devicon-bash-plain"></i>
-          <p>Automation</p>
-        </div>
-
-        <div class="card">
-          <i class="devicon-fastapi-plain colored"></i>
-          <p>REST APIs</p>
-        </div>
-      </div>
-    </section>
-<div class="divider-line"></div>
-<section id="projects" class="section">
-  <h2>Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project featured">
-      <span class="tag">Featured</span>
-
-      <h3>Retrievy (Lost Found Application)</h3>
-
-      <p>
-        Built Retrievy, a full-stack lost and found web application to report, track, and manage lost and found items efficiently. Developed a FastAPI backend with a structured SQLite database to store and manage item records including description, location, and contact details. Built a responsive React frontend for users to submit and browse reports, and implemented a matching system to connect related entries and improve item recovery.
-      </p>
-
-      <a href="https://github.com/adiincode-AI/RetrievyAI" target="_blank" class="project-link">
-        <i class="fa-brands fa-github"></i> View on GitHub
-      </a>
-    </div>
-
-    <div class="project">
-      <h3>Expense Tracker (Python + SQLite)</h3>
-      <p>
-        Developed a backend-driven expense tracking application to record, manage, and analyze daily expenses using SQLite database integration.
-      </p>
-
-      <a href="https://github.com/adiincode-AI/aureus-expense-tracker" target="_blank" class="project-link">
-        <i class="fa-brands fa-github"></i> View on GitHub
-      </a>
-    </div>
-
-    <div class="project">
-      <h3>Food Delivery Website</h3>
-      <p>
-        Full-stack food delivery system built using HTML, CSS, JavaScript, Bootstrap, and SQL with authentication and admin features.
-      </p>
-
-      <a href="https://github.com/adiincode-AI/food-delivery" target="_blank" class="project-link">
-        <i class="fa-brands fa-github"></i> View on GitHub
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section id="api-demo" class="section">
-  <h2>Live API Playground</h2>
-
-  <div class="weather-card">
-    <h3>Weather Checker</h3>
-
-    <input id="cityInput" type="text" placeholder="Enter city (e.g. Bhubaneswar)" />
-
-    <button onclick="getWeather()">Get Weather</button>
-
-    <div id="weatherResult"></div>
-  </div>
-</section>
-</section>
-      </a>
-    </div>
-
-  </div>
-</section>
-  
-
-    <section id="contact" class="social-center">
-      <a
-        href="https://github.com/adiincode-AI"
-        target="_blank"
-        class="social-btn"
-      >
-        <i class="fa-brands fa-github"></i>
-        GitHub
-      </a>
-      <a
-        href="https://www.linkedin.com/in/aditya-r-a7629a244/"
-        target="_blank"
-        class="social-btn"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
-      </a>
-      <a href="mailto:arout2922@gmail.com" class="social-btn">
-        <i class="fa-solid fa-envelope"></i>
-        Email
-      </a>
-    </section>
-      <div class="glow-divider"></div>
-
-    <footer class="footer">
-      <p>© 2026 Aditya Rout</p>
     </footer>
   </body>
 </html>
