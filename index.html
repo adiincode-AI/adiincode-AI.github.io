@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
-    <meta name="google-site-verification" content="OltbcJn85Z9CZHetT3G3FJPMbazVJ7P6QeJ65GJDo5g" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aditya Rout | Data Analyst Portfolio</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -16,37 +14,63 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <script src="script.js" defer></script>
+    
   </head>
 
   <body>
-    <header class="nav">
-      <div class="logo">Aditya Rout</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#blogs">Blogs</a>
+    <!-- --- NAVBAR --- -->
+    <header class="nav" id="siteNav">
+      <div class="logo">Aditya<span class="logo-dot">.</span>Rout</div>
 
-      </nav>
+      <div class="nav-links">
+        <a href="/about" class="nav-link" data-target="about">About</a>
+        <a href="/skills" class="nav-link" data-target="skills">Skills</a>
+        <a href="/projects" class="nav-link" data-target="projects">Projects</a>
+        <a href="/blogs" class="nav-link" data-target="blogs">Blogs</a>
+        <a href="/contact" class="nav-link" data-target="contact">Contact</a>
+      </div>
+
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
+    <div class="mobile-menu">
+      <a href="/about" class="nav-link" data-target="about">About</a>
+      <a href="/skills" class="nav-link" data-target="skills">Skills</a>
+      <a href="/projects" class="nav-link" data-target="projects">Projects</a>
+      <a href="/blogs" class="nav-link" data-target="blogs">Blogs</a>
+      <a href="/contact" class="nav-link" data-target="contact">Contact</a>
+    </div>
+
     <main>
-      <section class="hero">
+      <!-- --- HERO SECTION --- -->
+      <section class="hero section reveal">
+        <div class="hero-grid-backdrop"></div>
         <div class="hero-text">
+          <div class="eyebrow-tag">
+            <div class="status-dot"></div>
+            Open to Work
+          </div>
+
           <h1>Hi, I'm <span class="hero-name">Aditya</span></h1>
-          <h2 class="role-title">
-            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
-          </h2>
+
+          <div class="typing-container">
+            <span class="typed-text"></span><span class="cursor"></span>
+          </div>
 
           <p class="hero-description">
             Transforming raw data into actionable business insights. I
@@ -59,7 +83,7 @@
               <i class="fa-solid fa-chart-pie"></i> View Projects
             </a>
             <a
-              href="assets/Aditya_Rout-Resume.pdf"
+              href="assets/docs/Aditya_Rout-Resume.pdf"
               download="Aditya_Rout-Resume.pdf"
               class="btn secondary"
             >
@@ -69,212 +93,368 @@
         </div>
 
         <div class="hero-image">
-          <div class="image-card">
-            <img src="assets/myphoto.png" alt="Aditya Rout - Profile Photo" />
+          <div class="profile-graphic-wrapper">
+            <div class="tech-ring"></div>
+            <div class="pulse-ring"></div>
+            <div class="orbit">
+              <div class="orbit-dot"></div>
+            </div>
+
+            <div class="image-card">
+              <img
+                src="assets/images/global/hero-photo.png"
+                alt="Aditya Rout - Profile Photo"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section bg-light">
+      <!-- --- ABOUT SECTION --- -->
+      <section id="about" class="section bg-light reveal">
         <div class="container">
+          <span class="eyebrow">Introduction</span>
           <h2 class="section-title">About Me</h2>
-          <p class="about-text">
-            I am a Data Analyst with a strong foundation in Python and SQL,
-            dedicated to uncovering patterns and optimizing processes. My
-            background involves designing structured databases, processing
-            complex datasets, and extracting meaningful metrics. I am passionate
-            about bridging the gap between raw numbers and strategic business
-            solutions.
-          </p>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I am a Data Analyst with a strong foundation in Python and SQL,
+                dedicated to uncovering patterns and optimizing processes. My
+                background involves designing structured databases, processing
+                complex datasets, and extracting meaningful metrics. I am
+                passionate about bridging the gap between raw numbers and
+                strategic business solutions.
+              </p>
+            </div>
+
+            <!-- New Core Toolkit Panel -->
+            <div class="core-toolkit">
+              <span class="toolkit-label">Core Toolkit</span>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Tableau</span>
+                <span class="chip">Pandas</span>
+                <span class="chip">NumPy</span>
+                <span class="chip">SEO</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="skills" class="section">
+      <!-- --- SKILLS SECTION --- -->
+      <section id="skills" class="section reveal">
         <div class="container">
+          <span class="eyebrow">Capabilities</span>
           <h2 class="section-title">Technical Toolkit</h2>
+
           <div class="grid skills-grid">
             <div class="card skill-card">
-              <i class="devicon-python-plain colored"></i>
-              <h3>Python</h3>
-              <p>Pandas, NumPy, Matplotlib</p>
-              <!-- New Progress Bar -->
+              <div class="skill-head">
+                <div class="skill-icon">
+                  <i class="devicon-python-plain colored-icon"></i>
+                </div>
+                <div class="skill-meta">
+                  <h3>Python</h3>
+                  <p>Pandas, NumPy, Matplotlib</p>
+                </div>
+              </div>
               <div class="progress-bar">
                 <div class="progress-fill" data-width="90%"></div>
               </div>
             </div>
 
             <div class="card skill-card">
-              <i class="devicon-mysql-plain colored"></i>
-              <h3>Databases</h3>
-              <p>SQL, PostgreSQL, Relational Modeling</p>
-              <div class="progress-bar">
-                <div class="progress-fill" data-width="65%"></div>
+              <div class="skill-head">
+                <div class="skill-icon">
+                  <i class="devicon-mysql-plain colored-icon"></i>
+                </div>
+                <div class="skill-meta">
+                  <h3>Databases</h3>
+                  <p>SQL, PostgreSQL, Modeling</p>
+                </div>
               </div>
-            </div>
-
-            <div class="card skill-card">
-              <i class="fa-solid fa-chart-column colored-icon"></i>
-              <h3>Visualization</h3>
-              <p>Power BI, Tableau, Dashboards, Reporting</p>
-              <div class="progress-bar">
-                <div class="progress-fill" data-width="95%"></div>
-              </div>
-            </div>
-             <div class="card skill-card">
-              <i class="devicon-mysql-plain colored"></i>
-              <h3>Digital Marketing</h3>
-              <p>SEO, Competitor analysis, Remarketing, Google Analytics 4 </p>
-              <div class="progress-bar">
-                <div class="progress-fill" data-width="65%"></div>
-              </div>
-            </div>
-
-            <div class="card skill-card">
-              <i class="fa-solid fa-filter colored-icon"></i>
-              <h3>Data Processing</h3>
-              <p>Cleaning, ETL Pipelines, Automation</p>
               <div class="progress-bar">
                 <div class="progress-fill" data-width="80%"></div>
               </div>
             </div>
+
+            <div class="card skill-card">
+              <div class="skill-head">
+                <div class="skill-icon">
+                  <i class="fa-solid fa-chart-column colored-icon"></i>
+                </div>
+                <div class="skill-meta">
+                  <h3>Visualization</h3>
+                  <p>Power BI, Tableau, Reporting</p>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <div class="card skill-card">
+              <div class="skill-head">
+                <div class="skill-icon">
+                  <i class="fa-solid fa-chart-line colored-icon"></i>
+                </div>
+                <div class="skill-meta">
+                  <h3>Digital Marketing</h3>
+                  <p>SEO, GA4, Competitor Analysis</p>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section bg-light">
+      <!-- --- PROJECTS SECTION --- -->
+      <section id="projects" class="section bg-light reveal">
         <div class="container">
+          <span class="eyebrow">Portfolio</span>
           <h2 class="section-title">Analytical Projects</h2>
-          <div class="projects-grid grid">
-            <div class="project card">
+
+          <div class="projects-horizontal-grid">
+            <div class="project-card-horizontal card">
               <div class="project-img-wrapper">
+                <span class="project-badge">Analytics</span>
                 <img
-                  src="assets/hr_analytics_project/executive_hr_overview.png"
+                  src="assets/images/project/hr_analytics_project/executive_hr_overview.png"
                   class="cinematic-img"
                   alt="HR Analytics Dashboard"
                 />
               </div>
-
-              <h3>HR Analytics Project</h3>
-              <p>
-                Leveraged workforce analytics to mitigate attrition. Applied
-                Python for pattern recognition and Tableau for interactive
-                visualization, enabling leadership to make data-driven retention
-                decisions and optimize workforce productivity.
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  View Case Study & Dashboards
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+              <div class="project-content">
+                <h3>HR Analytics Dashboard</h3>
+                <p>
+                  Mitigated attrition through workforce analytics. Used Python
+                  for pattern recognition and Tableau for interactive
+                  visualization.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Python</span>
+                  <span class="tag">Tableau</span>
+                  <span class="tag">Data Cleaning</span>
+                </div>
+                <div class="action-group">
+                  <a
+                    href="pages/projects/hr_analytics_project.html"
+                    class="btn primary btn-sm"
+                  >
+                    View Case Study <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="project card">
+            <div class="project-card-horizontal card">
               <div class="project-img-wrapper">
+                <span class="project-badge">Analytics</span>
                 <img
-                  src="assets/hr_analytics_project/demo.png"
+                  src="assets/images/project/ecommerce_project/customer_insights.png"
                   class="cinematic-img"
-                  alt="Demo"
+                  alt="Customer_Insights"
                 />
               </div>
-
-              <h3> Sales Dashboard </h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, natus repellendus quas commodi odit aperiam dolore, laboriosam minima impedit, sunt id? Minus est nam consequuntur reprehenderit iusto, ducimus quos quaerat.
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  View Case Study & Dashboards
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+              <div class="project-content">
+                <h3>E-Commerce Sales Analytics</h3>
+                <p>
+                  Built an interactive Tableau dashboard to transform sales data
+                  into actionable insights on performance and shipping.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">Tableau</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Cleaning</span>
+                  <span class="tag">Pandas</span>
+                </div>
+                <div class="action-group">
+                  <a
+                    href="pages/projects/ecommerce-case-study.html"
+                    class="btn primary btn-sm"
+                  >
+                    View Case Study <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="project card">
+            <div class="project-card-horizontal card">
               <div class="project-img-wrapper">
+                <span class="project-badge">Web App</span>
                 <img
-                  src="assets/hr_analytics_project/demo.png"
+                  src="assets/images/project/clearleaf_project/clearleaf_login_page.png"
                   class="cinematic-img"
-                  alt="Demo"
+                  alt="Clearleaf App"
                 />
               </div>
+              <div class="project-content">
+                <h3>Clearleaf — AI PDF Reader</h3>
+                <p>
+                  Developed a React and FastAPI web app combining PDF viewing,
+                  AI question answering, and multi-timer productivity tools.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">React</span>
+                  <span class="tag">API</span>
+                  <span class="tag">Gemini AI</span>
+                </div>
+                <div class="action-group">
+                  <a
+                    href="https://github.com/adiincode-AI/Clearleaf"
+                    class="btn secondary btn-sm"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="https://clearleaf-six.vercel.app/"
+                    class="btn primary btn-sm"
+                  >
+                    Demo <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-              <h3>Sales Dashboard</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio eaque aut itaque incidunt ex enim eum ipsa excepturi esse earum ea repudiandae, voluptatum nihil optio quia veritatis quis quod.
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  View Case Study & Dashboards
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+            <div class="project-card-horizontal card">
+              <div class="project-img-wrapper">
+                <span class="project-badge">Web App</span>
+                <img
+                  src="assets/images/project/retrievy_project/retrievy_login.png"
+                  class="cinematic-img"
+                  alt="Retrievy App"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Retrievy — Lost & Found</h3>
+                <p>
+                  A smart platform implementing an intelligent matching
+                  algorithm to facilitate faster recovery of lost items.
+                </p>
+                <div class="tag-row">
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">SQLite</span>
+                  <span class="tag">React</span>
+                </div>
+                <div class="action-group">
+                  <a
+                    href="https://github.com/adiincode-AI/RetrievyUpdated"
+                    class="btn secondary btn-sm"
+                  >
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a
+                    href="https://retrievy.vercel.app/"
+                    class="btn primary btn-sm"
+                  >
+                    Demo <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
 
-     <section id="blogs" class="section bg-light">
+      <section id="blogs" class="section reveal">
         <div class="container">
-          <h2 class="section-title">Blogs</h2>
-          <div class="projects-grid grid">
-            <div class="project card">
-              <div class="project-img-wrapper">
+          <span class="eyebrow">Insights</span>
+          <h2 class="section-title">Blogs & Articles</h2>
+
+          <div class="blogs-layout">
+            <div class="blog-card featured-blog card">
+              <div class="blog-img-wrapper">
                 <img
-                  src=""
+                  src="assets/images/blog/prompt-injection/prompt_injection.png"
                   class="cinematic-img"
-                  alt="Blogs"
+                  alt="Featured Blog"
                 />
               </div>
-
-              <h3>Blogs</h3>
-              <p>
-                
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  Read More
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+              <div class="blog-content">
+                <div class="blog-meta-row">
+                  <span class="blog-tag">Cyber Security</span>
+                  <span class="blog-date">July 2, 2026</span>
+                </div>
+                <h3>
+                  Prompt Injection: The New Security Threat to AI Systems
+                  (Complete Guide for 2026)
+                </h3>
+                <p>
+                  Learn about Prompt Injection, how prompt injection and
+                  jailbreaks work, different attack types, defend methods,
+                  prevention strategies, and the best security practice for AI
+                  systems.
+                </p>
+                <a
+                  href="blog.html?post=prompt_injection_the_new_security_threat_to_ai_systems"
+                  class="text-link"
+                  >Read Article &rarr;</a
+                >
               </div>
             </div>
 
-            <div class="project card">
-              <div class="project-img-wrapper">
-                <img
-                  src="assets/hr_analytics_project/demo.png"
-                  class="cinematic-img"
-                  alt="Demo"
-                />
+            <div class="blog-sub-grid">
+              <div class="blog-card secondary-blog card">
+                <div class="blog-img-wrapper">
+                  <img
+                    src="assets/images/blog/data_visualization/data_visualization.jpg"
+                    class="cinematic-img"
+                    alt="Demo"
+                  />
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta-row">
+                    <span class="blog-tag">Educational</span>
+                    <span class="blog-date">Mar 29, 2026</span>
+                  </div>
+                  <h4>The Importance of Data Visualization in Business</h4>
+                  <p>
+                    Why raw data isn't enough, and how data visualization drives
+                    strategic business decisions.
+                  </p>
+                  <a
+                    href="blog.html?post=seeing_the_story_the_importance_of_data_visualization_in_business"
+                    class="text-link"
+                    >Read Article &rarr;</a
+                  >
+                </div>
               </div>
 
-              <h3>Project Placeholder</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, natus repellendus quas commodi odit aperiam dolore, laboriosam minima impedit, sunt id? Minus est nam consequuntur reprehenderit iusto, ducimus quos quaerat.
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  Read More
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-
-            <div class="project card">
-              <div class="project-img-wrapper">
-                <img
-                  src="assets/hr_analytics_project/demo.png"
-                  class="cinematic-img"
-                  alt="Demo"
-                />
-              </div>
-
-              <h3>Project Placeholder</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio eaque aut itaque incidunt ex enim eum ipsa excepturi esse earum ea repudiandae, voluptatum nihil optio quia veritatis quis quod.
-              </p>
-              <div class="project-actions" style="margin-top: 20px">
-                <a href="hr_analytics_project.html" class="btn primary">
-                  Read More
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
+              <div class="blog-card secondary-blog card">
+                <div class="blog-img-wrapper">
+                  <img
+                    src="assets/images/blog/python/python.jpeg"
+                    class="cinematic-img"
+                    alt="Python Programming"
+                  />
+                </div>
+                <div class="blog-content">
+                  <div class="blog-meta-row">
+                    <span class="blog-tag">Educational</span>
+                    <span class="blog-date">Mar 18, 2026</span>
+                  </div>
+                  <h4>
+                    Python: The Only Programming Language You Need to Master?
+                  </h4>
+                  <p>
+                    In the vast ecosystem of software development, few languages
+                    have achieved the dominance, longevity, and sheer
+                    versatility of Python.
+                  </p>
+                  <a
+                    href="blog.html?post=python_the_only_programming_language_you_need_to_master"
+                    class="text-link"
+                    >Read Article &rarr;</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -282,7 +462,7 @@
       </section>
     </main>
 
-    <footer id="contact" class="footer-section">
+    <footer id="contact" class="footer-section bg-light reveal">
       <div class="container">
         <h2 class="section-title">Let's Connect</h2>
         <p class="footer-text">
@@ -313,5 +493,6 @@
         <p class="copyright">© 2026 Aditya Rout. Designed with data in mind.</p>
       </div>
     </footer>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

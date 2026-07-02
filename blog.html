@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Loading...</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+
+    <nav class="blog-nav">
+        <div class="nav-container">
+            <a href="index.html" class="back-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Portfolio
+            </a>
+            <div class="nav-brand">Blogs and Articles</div>
+        </div>
+    </nav>
+
+    <main class="blog-layout">
+        <article class="blog-container fade-in" id="blog-content">
+            <div class="blog-header">
+                <span id="meta-category" class="badge"></span>
+                <h1 id="meta-title">Loading article&hellip;</h1>
+                <p id="meta-description" class="blog-subtitle"></p>
+
+                <div class="blog-meta-info">
+                    <div class="author-block">
+                        <span id="meta-author" class="author-name"></span>
+                        <span class="meta-divider" aria-hidden="true">&middot;</span>
+                        <span id="meta-date" class="publish-date"></span>
+                        <span class="meta-divider" aria-hidden="true">&middot;</span>
+                        <span id="meta-reading-time" class="reading-time"></span>
+                    </div>
+                </div>
+
+                <div class="tags-container" id="meta-tags"></div>
+            </div>
+
+            <img id="meta-cover" class="cover-image" style="display: none;" alt="">
+
+            <div id="markdown-body" class="markdown-body">
+                <div class="skeleton-loader">
+                    <div class="sk-line sk-w80"></div>
+                    <div class="sk-line sk-w100"></div>
+                    <div class="sk-line sk-w90"></div>
+                    <div class="sk-line sk-w60"></div>
+                </div>
+            </div>
+
+            <footer class="blog-footer">
+                <a href="index.html" class="back-link back-link--footer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Back to Portfolio
+                </a>
+            </footer>
+        </article>
+    </main>
+
+    <button id="scroll-to-top" aria-label="Scroll to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
