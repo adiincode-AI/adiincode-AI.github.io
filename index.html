@@ -1,18 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="OltbcJn85Z9CZHetT3G3FJPMbazVJ7P6QeJ65GJDo5g" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aditya Rout | Data Analyst Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="script.js" defer></script>
   </head>
 
@@ -24,6 +35,8 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+
       </nav>
     </header>
 
@@ -31,17 +44,25 @@
       <section class="hero">
         <div class="hero-text">
           <h1>Hi, I'm <span class="hero-name">Aditya</span></h1>
-          <h2 class="role-title">Data Analyst</h2>
-          
+          <h2 class="role-title">
+            <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+
           <p class="hero-description">
-            Transforming raw data into actionable business insights. I specialize in data manipulation, exploratory analysis, and building visual narratives to drive data-informed decisions.
+            Transforming raw data into actionable business insights. I
+            specialize in data manipulation, exploratory analysis, and building
+            visual narratives to drive data-informed decisions.
           </p>
 
           <div class="cta-group">
             <a href="#projects" class="btn primary">
-              <i class="fa-solid fa-chart-pie"></i> View Insights
+              <i class="fa-solid fa-chart-pie"></i> View Projects
             </a>
-            <a href="assets/resume.pdf" target="_blank" class="btn secondary">
+            <a
+              href="assets/Aditya_Rout-Resume.pdf"
+              download="Aditya_Rout-Resume.pdf"
+              class="btn secondary"
+            >
               <i class="fa-solid fa-file-pdf"></i> Resume
             </a>
           </div>
@@ -58,7 +79,12 @@
         <div class="container">
           <h2 class="section-title">About Me</h2>
           <p class="about-text">
-            I am a Data Analyst with a strong foundation in Python and SQL, dedicated to uncovering patterns and optimizing processes. My background involves designing structured databases, processing complex datasets, and extracting meaningful metrics. I am passionate about bridging the gap between raw numbers and strategic business solutions.
+            I am a Data Analyst with a strong foundation in Python and SQL,
+            dedicated to uncovering patterns and optimizing processes. My
+            background involves designing structured databases, processing
+            complex datasets, and extracting meaningful metrics. I am passionate
+            about bridging the gap between raw numbers and strategic business
+            solutions.
           </p>
         </div>
       </section>
@@ -67,31 +93,50 @@
         <div class="container">
           <h2 class="section-title">Technical Toolkit</h2>
           <div class="grid skills-grid">
-            
             <div class="card skill-card">
               <i class="devicon-python-plain colored"></i>
               <h3>Python</h3>
               <p>Pandas, NumPy, Matplotlib</p>
+              <!-- New Progress Bar -->
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
             </div>
 
             <div class="card skill-card">
               <i class="devicon-mysql-plain colored"></i>
               <h3>Databases</h3>
               <p>SQL, PostgreSQL, Relational Modeling</p>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
             </div>
 
             <div class="card skill-card">
               <i class="fa-solid fa-chart-column colored-icon"></i>
               <h3>Visualization</h3>
               <p>Power BI, Tableau, Dashboards, Reporting</p>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+             <div class="card skill-card">
+              <i class="devicon-mysql-plain colored"></i>
+              <h3>Digital Marketing</h3>
+              <p>SEO, Competitor analysis, Remarketing, Google Analytics 4 </p>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
             </div>
 
             <div class="card skill-card">
               <i class="fa-solid fa-filter colored-icon"></i>
               <h3>Data Processing</h3>
               <p>Cleaning, ETL Pipelines, Automation</p>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -100,66 +145,170 @@
         <div class="container">
           <h2 class="section-title">Analytical Projects</h2>
           <div class="projects-grid grid">
-            
             <div class="project card">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/hr_analytics_project/executive_hr_overview.png"
+                  class="cinematic-img"
+                  alt="HR Analytics Dashboard"
+                />
+              </div>
+
               <h3>HR Analytics Project</h3>
               <p>
-                Leveraged workforce analytics to mitigate attrition. Applied Python for pattern recognition and Tableau for interactive visualization, enabling leadership to make data-driven retention decisions and optimize workforce productivity.
+                Leveraged workforce analytics to mitigate attrition. Applied
+                Python for pattern recognition and Tableau for interactive
+                visualization, enabling leadership to make data-driven retention
+                decisions and optimize workforce productivity.
               </p>
-              <div class="project-actions" style="margin-top: 20px;">
+              <div class="project-actions" style="margin-top: 20px">
                 <a href="hr_analytics_project.html" class="btn primary">
-                  View Case Study & Dashboards &rarr;
+                  View Case Study & Dashboards
+                  <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>
 
             <div class="project card">
-              <h3>Food Delivery Data Modeling</h3>
-              <p>
-                Analyzed order processing workflows from a full-stack system. Designed entity-relationship diagrams and optimized database queries, resulting in faster data retrieval.
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/hr_analytics_project/demo.png"
+                  class="cinematic-img"
+                  alt="Demo"
+                />
+              </div>
+
+              <h3> Sales Dashboard </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, natus repellendus quas commodi odit aperiam dolore, laboriosam minima impedit, sunt id? Minus est nam consequuntur reprehenderit iusto, ducimus quos quaerat.
               </p>
-              <div class="project-actions" style="margin-top: 20px;">
-                <a href="project1.html" class="btn primary">
-                  View Case Study & Dashboards &rarr;
+              <div class="project-actions" style="margin-top: 20px">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  View Case Study & Dashboards
+                  <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>
 
             <div class="project card">
-              <h3>Retrievy Database Architecture</h3>
-              <p>
-                Structured the backend SQLite database for a lost-and-found application. Implemented a matching logic system to connect related entries based on location and descriptive data.
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/hr_analytics_project/demo.png"
+                  class="cinematic-img"
+                  alt="Demo"
+                />
+              </div>
+
+              <h3>Sales Dashboard</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio eaque aut itaque incidunt ex enim eum ipsa excepturi esse earum ea repudiandae, voluptatum nihil optio quia veritatis quis quod.
               </p>
-              <div class="project-actions" style="margin-top: 20px;">
-                <a href="project1.html" class="btn primary">
-                  View Case Study & Dashboards &rarr;
+              <div class="project-actions" style="margin-top: 20px">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  View Case Study & Dashboards
+                  <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </section>
+    </main>
 
+     <section id="blogs" class="section bg-light">
+        <div class="container">
+          <h2 class="section-title">Blogs</h2>
+          <div class="projects-grid grid">
+            <div class="project card">
+              <div class="project-img-wrapper">
+                <img
+                  src=""
+                  class="cinematic-img"
+                  alt="Blogs"
+                />
+              </div>
+
+              <h3>Blogs</h3>
+              <p>
+                
+              </p>
+              <div class="project-actions" style="margin-top: 20px">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project card">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/hr_analytics_project/demo.png"
+                  class="cinematic-img"
+                  alt="Demo"
+                />
+              </div>
+
+              <h3>Project Placeholder</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, natus repellendus quas commodi odit aperiam dolore, laboriosam minima impedit, sunt id? Minus est nam consequuntur reprehenderit iusto, ducimus quos quaerat.
+              </p>
+              <div class="project-actions" style="margin-top: 20px">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project card">
+              <div class="project-img-wrapper">
+                <img
+                  src="assets/hr_analytics_project/demo.png"
+                  class="cinematic-img"
+                  alt="Demo"
+                />
+              </div>
+
+              <h3>Project Placeholder</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla distinctio eaque aut itaque incidunt ex enim eum ipsa excepturi esse earum ea repudiandae, voluptatum nihil optio quia veritatis quis quod.
+              </p>
+              <div class="project-actions" style="margin-top: 20px">
+                <a href="hr_analytics_project.html" class="btn primary">
+                  Read More
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contact" class="footer-section">
       <div class="container">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="footer-text">Open to opportunities in Data Analytics and Business Intelligence.</p>
-        
+        <p class="footer-text">
+          Open to opportunities in Data Analytics and Business Intelligence.
+        </p>
+
         <div class="social-center">
-          <a href="https://github.com/adiincode-AI" target="_blank" class="social-btn">
+          <a
+            href="https://github.com/adiincode-AI"
+            target="_blank"
+            class="social-btn"
+          >
             <i class="fa-brands fa-github"></i> GitHub
           </a>
-          <a href="https://www.linkedin.com/in/aditya-r-a7629a244/" target="_blank" class="social-btn">
+          <a
+            href="https://www.linkedin.com/in/aditya-r-a7629a244/"
+            target="_blank"
+            class="social-btn"
+          >
             <i class="fa-brands fa-linkedin"></i> LinkedIn
           </a>
           <a href="mailto:arout2922@gmail.com" class="social-btn">
             <i class="fa-solid fa-envelope"></i> Email
           </a>
         </div>
-        
+
         <div class="divider-line"></div>
         <p class="copyright">© 2026 Aditya Rout. Designed with data in mind.</p>
       </div>

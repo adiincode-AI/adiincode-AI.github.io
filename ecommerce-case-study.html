@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Sales Analytics Dashboard | Case Study</title>
+    
+    <!-- External Stylesheets & Fonts -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+    
+    <style>
+      /* Extra styling specific to the case study page */
+      .case-study-header { 
+        padding: 80px 20px 40px; 
+        text-align: center; 
+        background: var(--bg-light); 
+        border-bottom: 1px solid var(--border-color); 
+      }
+      .case-study-content { 
+        max-width: 800px; 
+        margin: 0 auto; 
+        padding: 60px 20px; 
+      }
+      .case-study-content h2 { 
+        margin-top: 50px; 
+        color: var(--primary); 
+        font-size: 26px; 
+      }
+      .case-study-content h3 { 
+        margin-top: 35px; 
+        color: var(--text-main); 
+        font-size: 20px; 
+      }
+      .case-study-content p, 
+      .case-study-content ul { 
+        font-size: 17px; 
+        margin-bottom: 20px; 
+        color: var(--text-muted); 
+        line-height: 1.7; 
+      }
+      .case-study-content ul { 
+        padding-left: 20px; 
+      }
+      .case-study-content li { 
+        margin-bottom: 12px; 
+      }
+      .dashboard-img { 
+        width: 100%; 
+        border-radius: var(--radius); 
+        border: 1px solid var(--border-color); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        margin: 20px 0 10px 0; 
+      }
+      .img-caption { 
+        text-align: center; 
+        font-size: 14px; 
+        margin-top: 0; 
+        color: var(--text-muted); 
+        font-style: italic; 
+        margin-bottom: 30px; 
+      }
+      .back-btn { 
+        margin-bottom: 40px; 
+        display: inline-block; 
+      }
+      .kpi-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      .kpi-table th, .kpi-table td {
+        border: 1px solid var(--border-color);
+        padding: 12px;
+        text-align: left;
+      }
+      .kpi-table th {
+        background-color: var(--bg-light);
+        color: var(--primary);
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        color: #d6336c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="nav">
+      <div class="logo">Aditya Rout</div>
+      <nav>
+        <a href="index.html">← Back to Portfolio</a>
+      </nav>
+    </header>
+
+    <!-- Case Study Header -->
+    <section class="case-study-header">
+      <div class="container">
+        <h1>E-Commerce Sales Analytics Dashboard</h1>
+        <p class="role-title" style="margin-top: 15px;">Data Analysis, BI & Visualization</p>
+        <div class="cta-group" style="justify-content: center; margin-top: 25px;">
+          <a href="https://github.com/adiincode-AI/Ecommerce-Sales-Analytics" target="_blank" class="btn secondary">
+            <i class="fa-brands fa-github"></i> View Raw Code
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="case-study-content">
+      
+      <a href="index.html" class="project-link back-btn">← Back to Home</a>
+
+      <h2>1. Project Overview & Objective</h2>
+      <p>
+        The goal of this project was to transform raw transactional sales data into actionable business insights. I built a comprehensive E-Commerce Sales Analytics Dashboard in <strong>Tableau</strong> to analyze sales performance, customer behavior, geographic trends, product performance, seasonality, and shipping operations.
+      </p>
+      <p><strong>Skills Demonstrated:</strong> Data Cleaning, Data Validation, KPI Development, Tableau Dashboard Design, Business Intelligence, Customer & Geographic Analytics, Time-Series Analysis, and Data Storytelling.</p>
+
+      <h2>2. Data Collection & Custom KPIs</h2>
+      <p>
+        The dataset utilized consisted of granular transactional data, including Order Dates, Ship Modes, Customer Segments, Regions, and Product Categories. To drive the dashboards, I developed several calculated fields in Tableau:
+      </p>
+      
+      <table class="kpi-table">
+        <thead>
+          <tr>
+            <th>KPI Metric</th>
+            <th>Tableau Calculation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Total Sales</strong></td>
+            <td><code>SUM([Sales])</code></td>
+          </tr>
+          <tr>
+            <td><strong>Total Orders</strong></td>
+            <td><code>COUNTD([Order ID])</code></td>
+          </tr>
+          <tr>
+            <td><strong>Total Customers</strong></td>
+            <td><code>COUNTD([Customer ID])</code></td>
+          </tr>
+          <tr>
+            <td><strong>Average Order Value (AOV)</strong></td>
+            <td><code>SUM([Sales]) / COUNTD([Order ID])</code></td>
+          </tr>
+          <tr>
+            <td><strong>Average Shipping Time</strong></td>
+            <td><code>AVG(DATEDIFF('day',[Order Date],[Ship Date]))</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>3. Dashboard Architecture & Storytelling</h2>
+      <p>
+        To avoid clutter and ensure a clear business narrative, the project was strategically organized into six focused dashboard modules.
+      </p>
+
+      <!-- Dashboard 1: Executive & Product -->
+      <h3>Executive Summary & Product Performance</h3>
+      <img src="assets/ecommerce_project/executive_summary.png" alt="Executive Summary Dashboard" class="dashboard-img" />
+      <p class="img-caption">High-level KPIs outlining overall sales trends, revenue generation by category, and top/bottom performing products.</p>
+      
+      <ul>
+        <li><strong>Executive View:</strong> Answers macro-level questions regarding overall business health, category generation, and regional contributions. Features core KPIs (Total Sales, Orders, AOV).</li>
+        <li><strong>Product Analysis:</strong> Drills down into Categories and Sub-Categories. Identifies the Top 10 revenue-driving products and the Bottom 10 underperforming products to help optimize inventory.</li>
+      </ul>
+
+      <!-- Dashboard 2: Geography & Customers -->
+      <h3>Geographic Analysis & Customer Insights</h3>
+      <img src="assets/ecommerce_project/geo_customer_insights.png" alt="Geographic & Customer Dashboard" class="dashboard-img" />
+      <p class="img-caption">Map-based visualizations and segmentation charts highlighting market strength and high-value customers.</p>
+      
+      <ul>
+        <li><strong>Geographic Mapping:</strong> Highlights the strongest markets by breaking down sales by Region, State, and City.</li>
+        <li><strong>Customer Insights:</strong> Analyzes which customer segments contribute the most revenue, identifies the highest-value VIP customers, and tracks the ratio of new versus repeat customers.</li>
+      </ul>
+
+      <!-- Dashboard 3: Time Trends & Operations -->
+      <h3>Time Trends, Seasonality & Shipping Operations</h3>
+      <img src="assets/ecommerce_project/operations_dashboard.png" alt="Operations & Shipping Dashboard" class="dashboard-img" />
+      <p class="img-caption">Analysis of recurring demand patterns and logistical efficiency across shipping modes.</p>
+      
+      <ul>
+        <li><strong>Time Trends:</strong> Utilizes Year-over-Year growth analysis and monthly trends to identify recurring periods of high seasonal demand.</li>
+        <li><strong>Operations & Logistics:</strong> Evaluates average shipping times by Region and Ship Mode, uncovering which methods are fastest and where supply chain bottlenecks occur.</li>
+      </ul>
+
+      <h2>4. Technical Challenges & Solutions</h2>
+      <ul>
+        <li><strong>Challenge 1: Inflated Order Counts.</strong> Initially, total orders were calculated using <code>COUNT(Order ID)</code>, which caused inflated numbers because a single order could contain multiple products across several rows. <br><em>Solution:</em> Transitioned to using <code>COUNTD(Order ID)</code> to accurately count unique orders.</li>
+        <li><strong>Challenge 2: Negative Shipping Time Values.</strong> Shipping dashboards displayed negative values (some up to -700 days). Investigation revealed that some Order and Ship dates were accidentally modified during raw data prep (e.g., Order Date = 2025, Ship Date = 2023). <br><em>Solution:</em> Validated the date fields, cleaned invalid date entries, and recalculated the DATEDIFF metrics to restore accuracy.</li>
+        <li><strong>Challenge 3: Lack of Dashboard Storytelling.</strong> The initial iteration featured too many charts on a single page, diluting the business narrative. <br><em>Solution:</em> Reorganized the project into six distinct, logical modules (Executive, Product, Geo, Customer, Time, Operations), massively improving usability and analytical flow.</li>
+      </ul>
+
+      <h2>5. Key Business Insights</h2>
+      <ul>
+        <li><strong>Revenue Concentration:</strong> Sales are heavily concentrated within a few specific product categories, indicating areas where marketing budget should be prioritized.</li>
+        <li><strong>The Pareto Principle in Action:</strong> A relatively small group of high-value, repeat customers contributes a disproportionately large share of total sales.</li>
+        <li><strong>Logistics:</strong> While "Standard Class" is the most commonly used shipping method, shipping efficiency varies noticeably across different regions, highlighting opportunities for localized supply chain optimizations.</li>
+        <li><strong>Seasonality:</strong> Clear, recurring seasonal trends dictate demand spikes, providing a blueprint for when to ramp up inventory and promotional efforts.</li>
+      </ul>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="divider-line"></div>
+        <p class="copyright">© 2026 Aditya Rout</p>
+      </div>
+    </footer>
+  </body>
+</html>
