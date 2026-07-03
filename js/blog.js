@@ -147,6 +147,7 @@
 
         const slug = getSlug();
         const url = `${POSTS_DIR}${slug}.md`;
+        console.log("Attempting to fetch from:", url);
 
         try {
             const res = await fetch(url);

@@ -6,7 +6,7 @@ category: "Cybersecurity"
 author: "Aditya Rout"
 date: "2026-07-02"
 tags: [prompt-injection, ai-security, cybersecurity, llm, hacking]
-cover: assets\images\blog\prompt-injection\prompt_injection.png
+cover: assets\images\blog\prompt-injection\prompt Injection.png
 readingTime: "4 min read"
 
 Prompt Injection: The New Security Threat to AI Systems
