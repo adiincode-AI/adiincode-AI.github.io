@@ -5,7 +5,7 @@ author: Adi
 date: 2026-07-02
 category: Data Analytics
 readingTime: 4 min read
-cover: assets\images\blog\data_visualization\data_visualization.jpg
+cover: assets\images\blog\data_visualization\data_visualization.png
 tags:
   - Data Visualization
   - Business Intelligence

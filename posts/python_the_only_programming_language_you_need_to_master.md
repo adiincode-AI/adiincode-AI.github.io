@@ -5,7 +5,7 @@ author: Aditya
 date: Mar 18, 2026
 category: Educational
 readingTime: 4 min read
-cover: assets\images\blog\python\python.jpeg
+cover: assets\images\blog\python\python.png
 
 tags:
   - Python
