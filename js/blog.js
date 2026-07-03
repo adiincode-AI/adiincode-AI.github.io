@@ -1,9 +1,11 @@
-
-
 (function () {
     "use strict";
 
-    const POSTS_DIR = "posts/";
+    // FIX: Dynamically calculate the base path to handle GitHub Pages sub-directories.
+    const path = window.location.pathname;
+    // If the path ends with a file (like blog.html), strip it to get the directory.
+    const basePath = path.endsWith('/') ? path.slice(0, -1) : path.substring(0, path.lastIndexOf('/'));
+    const POSTS_DIR = `${basePath}/posts/`;
 
     function getSlug() {
         const params = new URLSearchParams(window.location.search);
@@ -147,6 +149,8 @@
 
         const slug = getSlug();
         const url = `${POSTS_DIR}${slug}.md`;
+        
+        // This will now log the correct absolute path in the console
         console.log("Attempting to fetch from:", url);
 
         try {
