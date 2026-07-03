@@ -2,7 +2,7 @@
   {
     "id": "the_new_age_of_digital_marketing",
     "title": "The New Age of Digital Marketing",
-    "category": "Notes",
+    "category": "Educational",
     "description": "A comprehensive study guide covering digital marketing fundamentals, consumer behavior, SEO, social media, email strategies, and AI integration.",
     "date": "2026-07-03",
     "readTime": "5 min read", 
@@ -26,7 +26,7 @@
     "description": "Why raw data isn't enough, and how data visualization drives strategic business decisions.",
     "date": "2026-07-02",
     "readTime": "4 min read",
-    "author": "Adi",
+    "author": "Aditya Rout",
     "cover": "assets/images/blog/data_visualization/data_visualization.png"
   },
   {
@@ -36,7 +36,17 @@
     "description": "Discover why Python is the backbone of modern technology and the perfect language for a career pivot.",
     "date": "Mar 18, 2026",
     "readTime": "4 min read",
-    "author": "Aditya",
+    "author": "Aditya Rout",
     "cover": "assets/images/blog/python/python.png"
+  },
+  {
+    "id": "github-pages-deployment-error",
+    "title": "How to Fix the 'Deployment Failed' Error in GitHub Actions",
+    "category": "Tutorial",
+    "description": "A step-by-step guide to resolving generic GitHub Pages deployment errors and setting up the perfect static site workflow.",
+    "date": "Mar 25, 2026",
+    "readTime": "4 min read",
+    "author": "Aditya Rout",
+    "cover": "assets/images/blog/github_deployment/github_deployment.png"
   }
 ]

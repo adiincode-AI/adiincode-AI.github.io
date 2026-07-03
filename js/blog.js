@@ -157,7 +157,7 @@
       const filteredPosts = allPosts.filter(
         (post) => post.id !== currentPostId,
       );
-      const postsToShow = filteredPosts.slice(0, 3);
+      const postsToShow = filteredPosts.slice(0, 4);
       const gridContainer = document.getElementById("more-blogs-grid");
 
       const cardsHTML = postsToShow
