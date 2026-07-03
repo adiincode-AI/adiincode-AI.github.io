@@ -1,0 +1,42 @@
+[
+  {
+    "id": "the_new_age_of_digital_marketing",
+    "title": "The New Age of Digital Marketing",
+    "category": "Notes",
+    "description": "A comprehensive study guide covering digital marketing fundamentals, consumer behavior, SEO, social media, email strategies, and AI integration.",
+    "date": "2026-07-03",
+    "readTime": "5 min read", 
+    "author": "Aditya Rout",
+    "cover": ""
+  },
+  {
+    "id": "prompt_injection_the_new_security_threat_to_ai_systems",
+    "title": "Prompt Injection: The New Security Threat to AI Systems",
+    "category": "Cybersecurity",
+    "description": "Learn how prompt injection works, the types of attacks, and how to secure your AI systems in 2026.",
+    "date": "2026-07-02",
+    "readTime": "4 min read",
+    "author": "Aditya Rout",
+    "cover": "assets/images/blog/prompt-injection/prompt Injection.png"
+  },
+  {
+    "id": "seeing_the_story_the_importance_of_data_visualization_in_business",
+    "title": "Seeing the Story: The Importance of Data Visualization in Business",
+    "category": "Data Analytics",
+    "description": "Why raw data isn't enough, and how data visualization drives strategic business decisions.",
+    "date": "2026-07-02",
+    "readTime": "4 min read",
+    "author": "Adi",
+    "cover": "assets/images/blog/data_visualization/data_visualization.png"
+  },
+  {
+    "id": "python_the_only_programming_language_you_need_to_master",
+    "title": "Python: The Only Programming Language You Need to Master?",
+    "category": "Educational",
+    "description": "Discover why Python is the backbone of modern technology and the perfect language for a career pivot.",
+    "date": "Mar 18, 2026",
+    "readTime": "4 min read",
+    "author": "Aditya",
+    "cover": "assets/images/blog/python/python.png"
+  }
+]
