@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedTextSpan = document.querySelector(".typed-text");
   const cursorSpan = document.querySelector(".cursor");
   const textArray = [
-    "Data Analyst",
-    "Python Programmer",
-    "Data Storyteller",
-    "Digital Marketing",
+    "Creative Marketing Professional",
+    "Content Strategist",
+    "Digital Marketer",
+    "Brand Storyteller",
   ];
 
   if (typedTextSpan && cursorSpan) {
